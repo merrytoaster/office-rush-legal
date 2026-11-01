@@ -16,25 +16,19 @@
 
 ## Публикация
 
-```bash
-cd source/store/github-pages
-git init
-git add .
-git commit -m "Office Rush: политика конфиденциальности"
-git branch -M main
-git remote add origin https://github.com/<аккаунт>/office-rush-legal.git
-git push -u origin main
-```
-
-Репозиторий должен быть **публичным** (бесплатные Pages). Дальше на GitHub:
-**Settings → Pages → Source: Deploy from a branch → Branch: `main`, папка `/ (root)` → Save.**
+Репозиторий уже создан и запушен: **https://github.com/merrytoaster/office-rush-legal** (публичный).
+Осталось включить Pages: **Settings → Pages → Source: Deploy from a branch → Branch: `main`, папка `/ (root)` → Save.**
 
 Через минуту страница откроется по адресу:
 
-- EN — `https://<аккаунт>.github.io/office-rush-legal/`
-- RU — `https://<аккаунт>.github.io/office-rush-legal/ru.html`
+- EN — `https://merrytoaster.github.io/office-rush-legal/`
+- RU — `https://merrytoaster.github.io/office-rush-legal/ru.html`
 
-Если назвать репозиторий `<аккаунт>.github.io`, адрес будет короче: `https://<аккаунт>.github.io/`.
+Обновление потом — из папки репозитория:
+
+```bash
+git add . && git commit -m "..." && git push
+```
 
 ## Куда вставить ссылку
 
